@@ -1,0 +1,166 @@
+*{
+	padding: 0;
+	margin: 0;
+	border-width: 0;
+}
+#dice{
+	position: absolute;
+}
+.content-box{
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+}
+input{
+	display: none;
+}
+.dice{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*transform: translate(-50%,-50%) rotate3d(1,1,1,45deg);*/
+	transform-origin: center;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	background-size: 300%;
+}
+.result{
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.result>div{
+	width: 1200px;
+	height: 100%;
+	position: absolute;
+	animation: result 0.25s steps(6) infinite paused;
+}
+#dice:checked +label .result-box{
+	animation: result 0.25s steps(6) infinite running;
+}
+@keyframes result {
+	from{
+		top: 0;
+	}
+	to{
+		top: -1210px;
+	}
+}
+.result>div>div{
+	border-radius: 20px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+}
+.result>div>div:nth-of-type(1){
+	background: url("./../dice.png") no-repeat top 33.3% center/cover;
+	background-size: 300%;
+}
+.result>div>div:nth-of-type(2){
+	background: url("./../dice.png") no-repeat top center/cover;
+	background-size: 300%;
+}
+.result>div>div:nth-of-type(3){
+	background: url("./../dice.png") no-repeat top 33.3% left/cover;
+	background-size: 300%;
+}.result>div>div:nth-of-type(4){
+	 background: url("./../dice.png") no-repeat top 33.3% right/cover;
+	 background-size: 300%;
+ }.result>div>div:nth-of-type(5){
+	   background: url("./../dice.png") no-repeat top 66.6% center/cover;
+	   background-size: 300%;
+   }.result>div>div:nth-of-type(6){
+	      background: url("./../dice.png") no-repeat bottom center/cover;
+	       background-size: 300%;
+       }
+
+
+#dice:checked+label .dice{
+	animation: dice 0.25s linear infinite;
+}
+@keyframes dice {
+	0% {
+		transform:rotate3d(1, 1, 1, 0deg);
+		top:45%;
+		left: 45%;
+	}12.5% {
+		transform:rotate3d(1, 1, 1, 180deg);
+		top: 25%;
+		left: 25%;
+	}25%{
+          transform:rotate3d(1, 1, 1, 0deg);
+          top: 45%;
+	     left: 45%;
+	     }
+    37.25% {
+	    transform:rotate3d(1, 1, 1, 180deg);
+	    top: 75%;
+		left: 75%;
+	}50% {
+         transform:rotate3d(1, 1, 1, 0deg);
+         top: 45%;
+		 left: 45%;
+	 }62.25%{
+	left: 25%;
+	top: 75%;
+     }75% {
+         transform:rotate3d(1, 1, 1, 180deg);
+         top: 45%;
+	      left: 45%;
+      }
+	87.5%{
+		transform:rotate3d(1, 1, 1, 0deg);
+		left: 75%;
+		top:25%;
+	}
+	100% {
+		transform:rotate3d(1, 1, 1, 180deg);
+		top: 45%;
+		left: 45%;
+	}
+}
+
+.dice>div{
+	border-radius: 20px;
+	border: 1px solid #333333;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-origin: center;
+	opacity: 1;
+}
+.dice>div:nth-of-type(1){
+	background: url("./../dice.png") no-repeat top 33.3% center/cover;
+	background-size: 300%;
+}
+.dice>div:nth-of-type(2){
+	transform: rotateX(90deg) translateY(-100px) translateZ(100px);
+	background: url("./../dice.png") no-repeat top center/cover;
+	background-size: 300%;
+}
+.dice>div:nth-of-type(3){
+	transform: rotateY(-90deg) translateX(-100px) translateZ(-100px);
+	background: url("./../dice.png") no-repeat top 33.3% left/cover;
+	background-size: 300%;
+}
+.dice>div:nth-of-type(4){
+	transform: rotateY(90deg) translateX(100px) translateZ(-100px);
+	 background: url("./../dice.png") no-repeat top 33.3% right/cover;
+	 background-size: 300%;
+ }
+.dice>div:nth-of-type(5){
+	   transform: rotateX(90deg)  translateY(-100px) translateZ(-100px);
+	   background: url("./../dice.png") no-repeat top 66.6% center/cover;
+	  background-size: 300%;
+  }
+.dice>div:nth-of-type(6){
+	transform: translateZ(-200px) rotateY(180deg);
+	   background: url("./../dice.png") no-repeat bottom center/cover;
+	   background-size: 300%;
+   }
+
+
