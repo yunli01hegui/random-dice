@@ -56,24 +56,24 @@ input{
 	border: 1px solid black;
 }
 .result>div>div:nth-of-type(1){
-	background: url("./../dice.png") no-repeat top 33.3% center/cover;
+	background: url("../img/dice.png") no-repeat top 33.3% center/cover;
 	background-size: 300%;
 }
 .result>div>div:nth-of-type(2){
-	background: url("./../dice.png") no-repeat top center/cover;
+	background: url("../img/dice.png") no-repeat top center/cover;
 	background-size: 300%;
 }
 .result>div>div:nth-of-type(3){
-	background: url("./../dice.png") no-repeat top 33.3% left/cover;
+	background: url("../img/dice.png") no-repeat top 33.3% left/cover;
 	background-size: 300%;
 }.result>div>div:nth-of-type(4){
-	 background: url("./../dice.png") no-repeat top 33.3% right/cover;
+	 background: url("../img/dice.png") no-repeat top 33.3% right/cover;
 	 background-size: 300%;
  }.result>div>div:nth-of-type(5){
-	   background: url("./../dice.png") no-repeat top 66.6% center/cover;
+	   background: url("../img/dice.png") no-repeat top 66.6% center/cover;
 	   background-size: 300%;
    }.result>div>div:nth-of-type(6){
-	      background: url("./../dice.png") no-repeat bottom center/cover;
+	      background: url("../img/dice.png") no-repeat bottom center/cover;
 	       background-size: 300%;
        }
 
@@ -133,32 +133,32 @@ input{
 	opacity: 1;
 }
 .dice>div:nth-of-type(1){
-	background: url("./../dice.png") no-repeat top 33.3% center/cover;
+	background: url("../img/dice.png") no-repeat top 33.3% center/cover;
 	background-size: 300%;
 }
 .dice>div:nth-of-type(2){
 	transform: rotateX(90deg) translateY(-100px) translateZ(100px);
-	background: url("./../dice.png") no-repeat top center/cover;
+	background: url("../img/dice.png") no-repeat top center/cover;
 	background-size: 300%;
 }
 .dice>div:nth-of-type(3){
 	transform: rotateY(-90deg) translateX(-100px) translateZ(-100px);
-	background: url("./../dice.png") no-repeat top 33.3% left/cover;
+	background: url("../img/dice.png") no-repeat top 33.3% left/cover;
 	background-size: 300%;
 }
 .dice>div:nth-of-type(4){
 	transform: rotateY(90deg) translateX(100px) translateZ(-100px);
-	 background: url("./../dice.png") no-repeat top 33.3% right/cover;
+	 background: url("../img/dice.png") no-repeat top 33.3% right/cover;
 	 background-size: 300%;
  }
 .dice>div:nth-of-type(5){
 	   transform: rotateX(90deg)  translateY(-100px) translateZ(-100px);
-	   background: url("./../dice.png") no-repeat top 66.6% center/cover;
+	   background: url("../img/dice.png") no-repeat top 66.6% center/cover;
 	  background-size: 300%;
   }
 .dice>div:nth-of-type(6){
 	transform: translateZ(-200px) rotateY(180deg);
-	   background: url("./../dice.png") no-repeat bottom center/cover;
+	   background: url("../img/dice.png") no-repeat bottom center/cover;
 	   background-size: 300%;
    }
 
